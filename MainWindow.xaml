@@ -1,0 +1,25 @@
+﻿<Window x:Class="ГлазаЗеркалоДуши.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ГлазаЗеркалоДуши"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000" FontFamily="Century Gothic" Icon="image/Глазки-save.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Background="#FFFFE9F9"></TextBlock>
+        <Image Grid.Row="0" HorizontalAlignment="Left" Margin="10" Source="image/Глазки-save.ico"></Image>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Grid.Column="1" Text="Глазки-save" VerticalAlignment="Center" FontSize="40"></TextBlock>
+
+        <Button Name="BackButton" Content="Назад" HorizontalAlignment="Right" Click="BackButton_Click" Background="#FFB175EE"></Button>
+
+        <Frame Name="MainFrame" Grid.Row="1" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden">
+
+        </Frame>
+
+    </Grid>
+</Window>
